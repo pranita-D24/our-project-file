@@ -14,6 +14,7 @@ from stage2_vector import Stage2Engine
 from stage3_balloons import detect_balloons
 from report_generator import ReportGenerator
 from reasoning_engine import ReasoningEngine
+from pdf_reader import get_or_create_profile, merge_profiles
 import yaml
 import cv2
 import numpy as np
@@ -306,6 +307,11 @@ def compare(path1: str, path2: str, sensitivity: float = 0.55, drawing_id: str =
         doc1, doc2 = fitz.open(path1), fitz.open(path2)
         page1, page2 = doc1[0], doc2[0]
         
+        # --- PHASE 1: PROFILING ---
+        prof1 = get_or_create_profile(path1)
+        prof2 = get_or_create_profile(path2)
+        m_prof = merge_profiles(prof1, prof2)
+        
         # --- STEP 1: TYPE GATE ---
         t1_type = classify_pdf(page1)
         t2_type = classify_pdf(page2)
@@ -505,7 +511,8 @@ def compare(path1: str, path2: str, sensitivity: float = 0.55, drawing_id: str =
         # --- STEP 9: REASONING ENGINE (Human Intelligence) ---
         all_changes = clustered_added + clustered_removed + s4_res["geometry"]["resized"]
         engine = ReasoningEngine()
-        audit_res = engine.run_full_audit(all_changes)
+        # Pass the detected standard for Stage 8 knowledge injection
+        audit_res = engine.run_full_audit(all_changes, drawing_standard=m_prof.drawing_standard)
         res.mechanical_story = audit_res.get("mechanical_story", "")
 
         res.processing_time = time.time() - start_time

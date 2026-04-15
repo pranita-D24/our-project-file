@@ -6,6 +6,7 @@ import logging
 import json
 import os
 from typing import List, Dict, Any, Optional
+from knowledge_manager import KnowledgeManager
 
 logger = logging.getLogger(__name__)
 
@@ -22,10 +23,13 @@ Determine the likely 'Mechanical Intent' behind these changes.
 CHANGES:
 {changes_summary}
 
+DESIGN STANDARDS & RULES:
+{design_standards}
+
 Provide your analysis in JSON:
 {{
   "intent_hypothesis": "Short description of the guessed goal (e.g., 'Pressure upgrade')",
-  "reasoning_logic": "Why you think this is the goal",
+  "reasoning_logic": "Why you think this is the goal based on the standards",
   "confidence": 0.0-1.0
 }}
 """
@@ -46,7 +50,8 @@ The memo should:
     def __init__(self, model_name: str = "claude-3-5-sonnet"):
         self.model_name = model_name
         self.client = None
-        self.knowledge_base = [] # Placeholder for ingested standards
+        self.knowledge_base = [] # Internal list
+        self.km = KnowledgeManager()
         self._init_client()
 
     def _init_client(self):
@@ -82,12 +87,17 @@ The memo should:
             logger.error(f"LLM call error: {e}")
             return f"Error during analysis: {e}"
 
-    def analyze_intent(self, changes: List[Dict[str, Any]]) -> Dict[str, Any]:
+    def analyze_intent(self, changes: List[Dict[str, Any]], drawing_standard: str = "UNKNOWN") -> Dict[str, Any]:
         """Phase 1: Generate Intent Hypothesis."""
         summary = self._summarize_changes(changes)
-        prompt = self.INTENT_PROMPT.format(changes_summary=summary)
+        standards = self.km.get_contextual_rules(drawing_standard)
         
-        logger.info("Generating intent hypothesis via LLM...")
+        prompt = self.INTENT_PROMPT.format(
+            changes_summary=summary,
+            design_standards=standards
+        )
+        
+        logger.info("Generating intent hypothesis via LLM with standards context...")
         raw_response = self._call_llm(prompt)
         
         try:
@@ -139,12 +149,12 @@ The memo should:
             summary.append(f"- {ch.get('status', 'MODIFIED')} {ch.get('type', 'element')} at {ch.get('centroid', 'unknown')}")
         return "\n".join(summary)
 
-    def run_full_audit(self, changes: List[Dict[str, Any]]) -> Dict[str, Any]:
+    def run_full_audit(self, changes: List[Dict[str, Any]], drawing_standard: str = "UNKNOWN") -> Dict[str, Any]:
         """The main entry point for Stage 7."""
         if not changes:
             return {"verdict": "No changes to analyze.", "story": ""}
 
-        hypothesis = self.analyze_intent(changes)
+        hypothesis = self.analyze_intent(changes, drawing_standard)
         verified = self.verify_changes(hypothesis["intent_hypothesis"], changes)
         story = self.generate_narrative(hypothesis, verified)
 

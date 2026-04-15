@@ -170,6 +170,22 @@ with st.sidebar:
     else:
         st.sidebar.info("AI verification: OFF (set CLAUDE_API_KEY to enable)")
 
+    st.divider()
+    st.markdown("### 📚 Knowledge Base")
+    st.caption("Upload Standards (ISO, ASME, etc.)")
+    std_files = st.file_uploader("Upload Standards", type=["pdf", "txt"], accept_multiple_files=True, label_visibility="collapsed")
+    
+    if std_files:
+        from knowledge_manager import KnowledgeManager
+        km = KnowledgeManager()
+        for sf in std_files:
+            # Save and ingest
+            tmp_path = save_tmp(sf, os.path.splitext(sf.name)[1])
+            if km.ingest_standard(tmp_path):
+                st.sidebar.success(f"Ingested: {sf.name}")
+            else:
+                st.sidebar.error(f"Failed: {sf.name}")
+
 # ── Upload ──
 st.markdown("#### Upload Drawings")
 c1, c2 = st.columns(2)
