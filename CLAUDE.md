@@ -65,6 +65,9 @@ compare(path1, path2)
     │
     ├─ Merge: _merge_change_sources()
     │
+    ├─ Layer 7: रीजनिंग (Reasoning Engine) [NEW]
+    │           → Explain "WHY" a change occurred in plain English
+    │
     └─ Render: _annotate() → _make_diff_heatmap() → _make_sbs()
 ```
 
@@ -181,7 +184,16 @@ _match_components(comps1, comps2, gray_v1, gray_v2)
 
 ## Changelog
 
+
+### 2026-04-15 — GitHub Migration & Human Intelligence Roadmap ✅
+- **CREATED** GitHub Repository: `pranita-D24/our-project-file`.
+- **INITIALIZED** local Git history and successfully pushed all project files.
+- **DRAFTED** Stage 7 Architecture: "Human Intelligence Agentic Layer."
+- **PLANNING** migration from Coordinate-based matching to **Topological Graph Matching** to solve the "guessing" problem in complex drawings.
+- **PLANNING** SAM2 + CLIP integration for semantic component identification.
+
 ### 2026-04-07 — Matching Math Fix + Ignored Dimensions on Heatmap ✅
+
 - **MODIFIED** `comparator.py`:
   - **MOVED Component Bug Fix:** Purely moved components have an IoU of `0.0`. Under the previous formula (`0.4*IoU + 0.6*shape`), max similarity was capped at `0.60`, which meant purely moved components could never clear the `0.78` threshold and were forced into ADDED + REMOVED.
   - **New Math:** Updated matching logic to `sim = min(1.0, shape_cosine + 0.2 * iou)`. This lets perfectly identical shapes reach >0.78 on shape alone, allowing correct classification as MOVED, while using IoU to tie-break identical components.
