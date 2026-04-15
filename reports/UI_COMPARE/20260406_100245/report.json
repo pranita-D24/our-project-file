@@ -1,0 +1,252 @@
+{
+  "system": "Engineering Drawing Comparison System",
+  "system_version": "1.0.0",
+  "comparison_id": "20260406_100245",
+  "generated_at": "2026-04-06T10:02:46.851621",
+  "processing_time_sec": null,
+  "drawing": {
+    "drawing_id": "UI_COMPARE",
+    "version_1": "v1",
+    "version_2": "v2"
+  },
+  "summary": {
+    "similarity": 87.09,
+    "difference": 12.91,
+    "verdict": "MODERATELY DIFFERENT",
+    "added_count": 7,
+    "removed_count": 7,
+    "modified_count": 0,
+    "matched_count": 2
+  },
+  "changes": {
+    "added": [
+      {
+        "object_id": 220,
+        "area": 22626.0,
+        "centroid": [
+          1099,
+          1072
+        ],
+        "bbox": [
+          919,
+          961,
+          372,
+          219
+        ],
+        "shape_type": "complex",
+        "perimeter": 4053.98
+      },
+      {
+        "object_id": 400,
+        "area": 3411.5,
+        "centroid": [
+          974,
+          764
+        ],
+        "bbox": [
+          923,
+          683,
+          89,
+          114
+        ],
+        "shape_type": "complex",
+        "perimeter": 885.11
+      },
+      {
+        "object_id": 495,
+        "area": 76776.0,
+        "centroid": [
+          298,
+          772
+        ],
+        "bbox": [
+          84,
+          451,
+          365,
+          677
+        ],
+        "shape_type": "complex",
+        "perimeter": 6077.82
+      },
+      {
+        "object_id": 501,
+        "area": 51117.5,
+        "centroid": [
+          660,
+          862
+        ],
+        "bbox": [
+          517,
+          413,
+          392,
+          715
+        ],
+        "shape_type": "rectangle",
+        "perimeter": 5591.9
+      },
+      {
+        "object_id": 600,
+        "area": 52355.0,
+        "centroid": [
+          1574,
+          509
+        ],
+        "bbox": [
+          1464,
+          193,
+          206,
+          545
+        ],
+        "shape_type": "complex",
+        "perimeter": 2319.76
+      },
+      {
+        "object_id": 609,
+        "area": 4423.5,
+        "centroid": [
+          1183,
+          301
+        ],
+        "bbox": [
+          1043,
+          187,
+          199,
+          159
+        ],
+        "shape_type": "complex",
+        "perimeter": 1336.99
+      },
+      {
+        "object_id": 645,
+        "area": 39224.5,
+        "centroid": [
+          314,
+          284
+        ],
+        "bbox": [
+          158,
+          125,
+          320,
+          241
+        ],
+        "shape_type": "complex",
+        "perimeter": 2283.51
+      }
+    ],
+    "removed": [
+      {
+        "object_id": 256,
+        "area": 48647.0,
+        "centroid": [
+          1104,
+          1058
+        ],
+        "bbox": [
+          908,
+          906,
+          371,
+          274
+        ],
+        "shape_type": "rectangle",
+        "perimeter": 2783.79
+      },
+      {
+        "object_id": 381,
+        "area": 4945.0,
+        "centroid": [
+          974,
+          767
+        ],
+        "bbox": [
+          914,
+          701,
+          118,
+          106
+        ],
+        "shape_type": "complex",
+        "perimeter": 1142.15
+      },
+      {
+        "object_id": 490,
+        "area": 66146.5,
+        "centroid": [
+          294,
+          810
+        ],
+        "bbox": [
+          108,
+          495,
+          341,
+          633
+        ],
+        "shape_type": "complex",
+        "perimeter": 5753.15
+      },
+      {
+        "object_id": 498,
+        "area": 64481.5,
+        "centroid": [
+          652,
+          789
+        ],
+        "bbox": [
+          517,
+          454,
+          392,
+          674
+        ],
+        "shape_type": "triangle",
+        "perimeter": 4732.33
+      },
+      {
+        "object_id": 586,
+        "area": 5158.5,
+        "centroid": [
+          773,
+          321
+        ],
+        "bbox": [
+          644,
+          203,
+          258,
+          162
+        ],
+        "shape_type": "complex",
+        "perimeter": 2012.52
+      },
+      {
+        "object_id": 596,
+        "area": 58632.0,
+        "centroid": [
+          322,
+          294
+        ],
+        "bbox": [
+          158,
+          174,
+          320,
+          241
+        ],
+        "shape_type": "rectangle",
+        "perimeter": 1355.08
+      },
+      {
+        "object_id": 614,
+        "area": 67455.5,
+        "centroid": [
+          1115,
+          401
+        ],
+        "bbox": [
+          994,
+          131,
+          268,
+          545
+        ],
+        "shape_type": "rectangle",
+        "perimeter": 2058.84
+      }
+    ],
+    "modified": []
+  }
+}

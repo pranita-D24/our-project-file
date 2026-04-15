@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+*.pyc
+outputs/thumbnails/
+*.png
+*.log
+.pytest_cache/

@@ -1,0 +1,24 @@
+drawings_root: "c:/Trivim Internship/engineering_comparison_system/drawings"
+output_root:   "c:/Trivim Internship/engineering_comparison_system/output"
+v1_suffix:     "_V1.pdf"
+v2_suffix:     "_V2.pdf"
+max_workers:   12
+batch_size:    500
+
+stage2:
+  balloon_min_size_pt: 8
+  balloon_max_size_pt: 45
+  balloon_aspect_tolerance: 0.15
+  dimension_proximity_pt: 20
+  centroid_match_tolerance_pt: 15
+  resize_threshold_pt: 2.0
+  diff_thumbnail_dpi: 72
+
+cleanup:
+  delete_thumbnails_after_report: false
+  max_output_age_days: 30
+  
+thumbnails:
+  enabled: true
+  dpi: 150
+  output_dir: tumbnail/

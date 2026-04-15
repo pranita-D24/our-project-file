@@ -1,0 +1,112 @@
+{
+  "system": "Engineering Drawing Comparison System",
+  "system_version": "1.0.0",
+  "comparison_id": "20260403_172814",
+  "generated_at": "2026-04-03T17:28:15.364956",
+  "processing_time_sec": null,
+  "drawing": {
+    "drawing_id": "UI_COMPARE",
+    "version_1": "v1",
+    "version_2": "v2"
+  },
+  "summary": {
+    "similarity": 91.65,
+    "difference": 8.35,
+    "verdict": "MODERATELY DIFFERENT",
+    "added_count": 0,
+    "removed_count": 3,
+    "modified_count": 1,
+    "matched_count": 6
+  },
+  "changes": {
+    "added": [],
+    "removed": [
+      {
+        "object_id": 381,
+        "area": 2077.0,
+        "centroid": [
+          914,
+          388
+        ],
+        "bbox": [
+          858,
+          350,
+          106,
+          85
+        ],
+        "shape_type": "triangle",
+        "perimeter": 977.18
+      },
+      {
+        "object_id": 428,
+        "area": 4571.5,
+        "centroid": [
+          847,
+          329
+        ],
+        "bbox": [
+          825,
+          245,
+          74,
+          181
+        ],
+        "shape_type": "triangle",
+        "perimeter": 1415.47
+      },
+      {
+        "object_id": 518,
+        "area": 2365.5,
+        "centroid": [
+          864,
+          146
+        ],
+        "bbox": [
+          825,
+          110,
+          93,
+          66
+        ],
+        "shape_type": "complex",
+        "perimeter": 1021.9
+      }
+    ],
+    "modified": [
+      {
+        "v1": {
+          "object_id": 527,
+          "area": 36940.5,
+          "centroid": [
+            234,
+            206
+          ],
+          "bbox": [
+            159,
+            83,
+            152,
+            259
+          ],
+          "shape_type": "rectangle",
+          "perimeter": 816.53
+        },
+        "v2": {
+          "object_id": 294,
+          "area": 36941.5,
+          "centroid": [
+            233,
+            206
+          ],
+          "bbox": [
+            159,
+            83,
+            152,
+            259
+          ],
+          "shape_type": "rectangle",
+          "perimeter": 816.53
+        },
+        "area_change_pct": 0.0,
+        "similarity": 0.814
+      }
+    ]
+  }
+}

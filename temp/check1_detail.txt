@@ -1,0 +1,6 @@
+﻿Engineering Drawing Comparison System v2.1.0
+Company  : Wipro Pari Private Limited
+Folders  : Ready Γ£à
+same_object: False
+pixels_diff: 5822767
+binary dtype: uint8

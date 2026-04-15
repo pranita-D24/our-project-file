@@ -1,0 +1,51 @@
+﻿.\venv\Scripts\python.exe 
+: WARNING:pdf_reader:_prep
+rocess_for_layout failed, 
+returning raw image: 
+'charmap' codec can't 
+encode character '\u2705' 
+in position 17: character 
+maps to <undefined>
+At line:1 char:1
++ 
+.\venv\Scripts\python.exe 
+temp\verify_stage1.py 
+2>&1 | Out-File -File ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~
+    + CategoryInfo        
+      : NotSpecified: (W  
+  ARNING:pdf_rea... to    
+ <undefined>:String) [    
+], RemoteException
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+WARNING:dxf_reader:DXF 
+extents are missing or 
+invalid (infinite / NaN / 
+out of range). Falling 
+back to content_bbox = 
+(0, 0, 1000, 1000).
+Engineering Drawing Comparison System v2.1.0
+Company  : Wipro Pari Private Limited
+
+CHECK 1a  raw is pre (must be False): True
+CHECK 1a  pixels mutated by preprocess: 0
+CHECK 1a  binary_gray shape+dtype OK: True
+CHECK 1a  PASS: False
+CHECK 1b  content_bbox (preprocessed): (np.int32(33), np.int32(5), np.int32(1678), np.int32(1158))
+CHECK 1b  content_bbox (raw):           (np.int32(33), np.int32(5), np.int32(1678), np.int32(1158))
+CHECK 1b  layout receives preprocessed image: confirmed (separate call verified)
+CHECK 2   .result() propagates exceptions: True
+CHECK 2   PASS: True
+CHECK 3   DXF file: temp/test_minimal.dxf
+CHECK 3   Cache file written: True  (235b181b78ea93aa68349eaacdba6dde.json)
+CHECK 3   profile.units: mm
+CHECK 3   profile.content_bbox: (0, 0, 1000, 1000)
+CHECK 3   Second ingest() is cache HIT (file exists): True
+CHECK 3   PASS: True
+
+SOME CHECKS FAILED ù see above

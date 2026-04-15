@@ -1,0 +1,99 @@
+{
+  "system": "Engineering Drawing Comparison System",
+  "system_version": "1.0.0",
+  "comparison_id": "20260403_175627",
+  "generated_at": "2026-04-03T17:56:28.580074",
+  "processing_time_sec": null,
+  "drawing": {
+    "drawing_id": "UI_COMPARE",
+    "version_1": "v1",
+    "version_2": "v2"
+  },
+  "summary": {
+    "similarity": 97.53,
+    "difference": 2.47,
+    "verdict": "VERY SIMILAR",
+    "added_count": 0,
+    "removed_count": 0,
+    "modified_count": 2,
+    "matched_count": 3
+  },
+  "changes": {
+    "added": [],
+    "removed": [],
+    "modified": [
+      {
+        "v1": {
+          "object_id": 148,
+          "area": 29023.0,
+          "centroid": [
+            435,
+            369
+          ],
+          "bbox": [
+            244,
+            332,
+            384,
+            77
+          ],
+          "shape_type": "rectangle",
+          "perimeter": 912.14
+        },
+        "v2": {
+          "object_id": 138,
+          "area": 29024.5,
+          "centroid": [
+            435,
+            369
+          ],
+          "bbox": [
+            244,
+            332,
+            385,
+            77
+          ],
+          "shape_type": "rectangle",
+          "perimeter": 913.56
+        },
+        "area_change_pct": 0.0,
+        "similarity": 0.857
+      },
+      {
+        "v1": {
+          "object_id": 163,
+          "area": 13203.0,
+          "centroid": [
+            730,
+            209
+          ],
+          "bbox": [
+            650,
+            137,
+            163,
+            145
+          ],
+          "shape_type": "complex",
+          "perimeter": 512.22
+        },
+        "v2": {
+          "object_id": 156,
+          "area": 8526.0,
+          "centroid": [
+            730,
+            208
+          ],
+          "bbox": [
+            666,
+            151,
+            131,
+            117
+          ],
+          "shape_type": "complex",
+          "perimeter": 409.65
+        },
+        "area_change_pct": 35.4,
+        "similarity": 0.945
+      }
+    ]
+  }
+}

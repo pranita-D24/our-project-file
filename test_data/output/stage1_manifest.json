@@ -1,0 +1,68 @@
+{
+  "run_id": "RUN_20260410_230821",
+  "total_pairs": 5,
+  "identical_count": 3,
+  "proceed_count": 1,
+  "error_count": 1,
+  "pairs": [
+    {
+      "status": "IDENTICAL",
+      "score": 100,
+      "ssim": 1.0,
+      "changed_pixels": 0.0,
+      "skip_processing": true,
+      "hash_v1": "58ccbb29baa9c48d0e8b0312ba4e590d42bab1eba200645beb2261be140a4a11",
+      "hash_v2": "58ccbb29baa9c48d0e8b0312ba4e590d42bab1eba200645beb2261be140a4a11",
+      "drawing_id": "A",
+      "path_v1": "c:\\Trivim Internship\\engineering_comparison_system\\test_data\\A_V1.pdf",
+      "path_v2": "c:\\Trivim Internship\\engineering_comparison_system\\test_data\\A_V2.pdf"
+    },
+    {
+      "status": "IDENTICAL",
+      "score": 100,
+      "ssim": 1.0,
+      "changed_pixels": 0.0,
+      "skip_processing": true,
+      "hash_v1": "58ccbb29baa9c48d0e8b0312ba4e590d42bab1eba200645beb2261be140a4a11",
+      "hash_v2": "58ccbb29baa9c48d0e8b0312ba4e590d42bab1eba200645beb2261be140a4a11",
+      "drawing_id": "A",
+      "path_v1": "c:\\Trivim Internship\\engineering_comparison_system\\test_data\\A_V1.pdf",
+      "path_v2": "c:\\Trivim Internship\\engineering_comparison_system\\test_data\\A_V1.pdf"
+    },
+    {
+      "status": "ERROR",
+      "skip_processing": false,
+      "hash_v1": null,
+      "hash_v2": null,
+      "error_message": "Failed to open file 'c:\\\\Trivim Internship\\\\engineering_comparison_system\\\\test_data\\\\corrupt_V1.pdf'.",
+      "drawing_id": "corrupt",
+      "path_v1": "c:\\Trivim Internship\\engineering_comparison_system\\test_data\\corrupt_V1.pdf",
+      "path_v2": "c:\\Trivim Internship\\engineering_comparison_system\\test_data\\A_V2.pdf"
+    },
+    {
+      "status": "IDENTICAL",
+      "score": 100,
+      "ssim": 1.0,
+      "changed_pixels": 0.0,
+      "skip_processing": true,
+      "hash_v1": "58ccbb29baa9c48d0e8b0312ba4e590d42bab1eba200645beb2261be140a4a11",
+      "hash_v2": "58ccbb29baa9c48d0e8b0312ba4e590d42bab1eba200645beb2261be140a4a11",
+      "drawing_id": "A",
+      "path_v1": "c:\\Trivim Internship\\engineering_comparison_system\\test_data\\A_V1.pdf",
+      "path_v2": "c:\\Trivim Internship\\engineering_comparison_system\\test_data\\A_V2.pdf"
+    },
+    {
+      "status": "PROCEED",
+      "skip_processing": false,
+      "hash_v1": "58ccbb29baa9c48d0e8b0312ba4e590d42bab1eba200645beb2261be140a4a11",
+      "hash_v2": "4af1d3c8b06642bf4c5350d89f80e7ba79f4d9852e2f77daa1b2aaaa69b7f2b4",
+      "page_count_v1": 1,
+      "page_count_v2": 1,
+      "page_count_mismatch": false,
+      "error_message": null,
+      "drawing_id": "A",
+      "path_v1": "c:\\Trivim Internship\\engineering_comparison_system\\test_data\\A_V1.pdf",
+      "path_v2": "c:\\Trivim Internship\\engineering_comparison_system\\test_data\\B_V2.pdf"
+    }
+  ]
+}

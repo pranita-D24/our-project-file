@@ -1,0 +1,124 @@
+{
+  "system": "Engineering Drawing Comparison System",
+  "system_version": "1.0.0",
+  "comparison_id": "20260403_175354",
+  "generated_at": "2026-04-03T17:53:55.389373",
+  "processing_time_sec": null,
+  "drawing": {
+    "drawing_id": "UI_COMPARE",
+    "version_1": "v1",
+    "version_2": "v2"
+  },
+  "summary": {
+    "similarity": 86.27,
+    "difference": 13.73,
+    "verdict": "MODERATELY DIFFERENT",
+    "added_count": 3,
+    "removed_count": 3,
+    "modified_count": 0,
+    "matched_count": 4
+  },
+  "changes": {
+    "added": [
+      {
+        "object_id": 37,
+        "area": 18296.0,
+        "centroid": [
+          902,
+          906
+        ],
+        "bbox": [
+          834,
+          839,
+          138,
+          136
+        ],
+        "shape_type": "rectangle",
+        "perimeter": 541.8
+      },
+      {
+        "object_id": 80,
+        "area": 2496.5,
+        "centroid": [
+          809,
+          641
+        ],
+        "bbox": [
+          761,
+          598,
+          91,
+          75
+        ],
+        "shape_type": "complex",
+        "perimeter": 736.03
+      },
+      {
+        "object_id": 146,
+        "area": 2049.0,
+        "centroid": [
+          651,
+          268
+        ],
+        "bbox": [
+          610,
+          215,
+          63,
+          89
+        ],
+        "shape_type": "complex",
+        "perimeter": 513.2
+      }
+    ],
+    "removed": [
+      {
+        "object_id": 38,
+        "area": 10306.0,
+        "centroid": [
+          900,
+          932
+        ],
+        "bbox": [
+          843,
+          885,
+          139,
+          98
+        ],
+        "shape_type": "complex",
+        "perimeter": 905.48
+      },
+      {
+        "object_id": 146,
+        "area": 2985.5,
+        "centroid": [
+          986,
+          250
+        ],
+        "bbox": [
+          952,
+          197,
+          65,
+          91
+        ],
+        "shape_type": "complex",
+        "perimeter": 486.27
+      },
+      {
+        "object_id": 156,
+        "area": 36749.5,
+        "centroid": [
+          1312,
+          423
+        ],
+        "bbox": [
+          1220,
+          161,
+          172,
+          454
+        ],
+        "shape_type": "complex",
+        "perimeter": 1896.09
+      }
+    ],
+    "modified": []
+  }
+}

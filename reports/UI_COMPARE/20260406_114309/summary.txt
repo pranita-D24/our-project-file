@@ -1,0 +1,32 @@
+======================================================================
+  Wipro Pari Private Limited
+  Engineering Drawing Comparison System  v2.0.0
+  ENGINEERING DRAWING COMPARISON REPORT
+======================================================================
+  Drawing ID      : UI_COMPARE
+  Version 1       : v1
+  Version 2       : v2
+  Generated       : 2026-04-06 11:43:10
+  Processing Time : 10.87s
+
+  -- CV ANALYSIS --
+  Similarity      : 97.69%
+  SSIM Score      : 97.69%
+  Pixel Changed   : 0.61%
+  Verdict         : VERY SIMILAR
+  Added Objects   : 0
+  Removed Objects : 0
+  Resized Objects : 0
+  Unchanged       : 0
+
+  -- AUTOMATIC CHANGE SUMMARY --
+  Verdict: VERY SIMILAR
+  Pixel difference: 0.61% of drawing area changed
+  SSIM score: 97.69%
+  No structural changes detected.
+  Minor pixel differences may be due to rendering or compression.
+
+  -- DIMENSION CHANGES --
+  Summary         : 106 dimension lines changed
+
+======================================================================

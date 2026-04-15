@@ -1,0 +1,22 @@
+============================================================
+  Engineering Drawing Comparison System
+  Comparison Report
+============================================================
+  Drawing ID   : QUICK
+  Version 1    : v1
+  Version 2    : v2
+  Generated    : 2026-04-03 16:12:24
+  Process Time : 0.91s
+
+  RESULTS
+------------------------------------------------------------
+  Similarity   : 91.65%
+  Verdict      : MODERATELY DIFFERENT
+
+  CHANGES DETECTED
+------------------------------------------------------------
+  Added        : 2 objects
+  Removed      : 4 objects
+  Modified     : 0 objects
+  Unchanged    : 1 objects (moves ignored)
+============================================================

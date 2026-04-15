@@ -1,0 +1,408 @@
+﻿.\venv\Scripts\python.exe 
+: INFO:report_generator:Re
+portGenerator v2.0 
+initialized
+At line:1 char:1
++ 
+.\venv\Scripts\python.exe 
+hf_audit.py > 
+master_audit_log.txt 2>&1
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~
+    + CategoryInfo        
+      : NotSpecified: (I  
+  NFO:report_gen...2.0    
+ initialized:String) [    
+], RemoteException
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+INFO:ingestion:Profile 
+cache HIT: 
+PRV73B124138.PDF
+INFO:ingestion:Profile 
+cache HIT: PRV73B124138 - 
+Copy.PDF
+INFO:exclusion:Gear data 
+table masked: (216, 101, 
+6920, 4837)
+INFO:exclusion:Revision 
+table masked: (2277, 
+2819, 3194, 3513)
+INFO:exclusion:Hough 
+circles: 9526 balloons
+INFO:exclusion:Contour 
+balloons: 0
+INFO:exclusion:Dimension 
+lines masked: 1797
+INFO:exclusion:Exclusion 
+mask covers 99.9% of image
+INFO:exclusion:Gear data 
+table masked: (216, 101, 
+6920, 4837)
+INFO:exclusion:Revision 
+table masked: (2277, 
+2819, 3194, 3513)
+INFO:exclusion:Hough 
+circles: 6291 balloons
+INFO:exclusion:Contour 
+balloons: 0
+INFO:exclusion:Dimension 
+lines masked: 905
+INFO:exclusion:Exclusion 
+mask covers 99.5% of image
+INFO:comparator:Global 
+shift rejected (magnitude 
+0.0 > limit 288.0)
+C:\Trivim Internship\engin
+eering_comparison_system\a
+gent_verifier.py:1: 
+FutureWarning: 
+
+All support for the 
+`google.generativeai` 
+package has ended. It 
+will no longer be 
+receiving 
+updates or bug fixes. 
+Please switch to the 
+`google.genai` package as 
+soon as possible.
+See README for more 
+details:
+
+https://github.com/google-
+gemini/deprecated-generati
+ve-ai-python/blob/main/REA
+DME.md
+
+  import 
+google.generativeai as 
+genai
+WARNING:comparator:Failed 
+to run agent verifier: 
+cannot import name 
+'verify_changes' from 
+'agent_verifier' 
+(C:\Trivim Internship\engi
+neering_comparison_system\
+agent_verifier.py)
+INFO:comparator:Compare 
+done ΓÇö MODERATE CHANGES 
+ 80%  Add:0 Rem:0 
+Resize:0 Chg:0 Mov:0 
+Dim:30  
+Align:SIFT/ORB/Phase
+INFO:report_generator:Repo
+rtGenerator v2.0 
+initialized
+INFO:report_generator:3-pa
+nel report saved: 
+C:\Trivim Internship\engin
+eering_comparison_system\r
+eports\PRV73B124138\HF_AUD
+IT_1775645545\visual_repor
+t.jpg
+INFO:report_generator:Ente
+rprise PDF report saved: 
+C:\Trivim Internship\engin
+eering_comparison_system\r
+eports\PRV73B124138\HF_AUD
+IT_1775645545\comparison_r
+eport.pdf
+INFO:ingestion:Profile 
+cache HIT: 
+PRV73B124139.PDF
+INFO:ingestion:Profile 
+cache HIT: PRV73B124139 - 
+Copy.PDF
+INFO:exclusion:Gear data 
+table masked: (216, 101, 
+6920, 4837)
+INFO:exclusion:Revision 
+table masked: (682, 796, 
+3224, 2184)
+INFO:exclusion:Hough 
+circles: 714 balloons
+INFO:exclusion:Contour 
+balloons: 0
+INFO:exclusion:Dimension 
+lines masked: 1021
+INFO:exclusion:Exclusion 
+mask covers 93.6% of image
+INFO:exclusion:Gear data 
+table masked: (216, 101, 
+6920, 4837)
+INFO:exclusion:Revision 
+table masked: (682, 796, 
+3224, 2184)
+INFO:exclusion:Hough 
+circles: 725 balloons
+INFO:exclusion:Contour 
+balloons: 0
+INFO:exclusion:Dimension 
+lines masked: 1035
+INFO:exclusion:Exclusion 
+mask covers 93.7% of image
+INFO:comparator:Global 
+shift rejected (magnitude 
+0.0 > limit 288.0)
+WARNING:comparator:Failed 
+to run agent verifier: 
+cannot import name 
+'verify_changes' from 
+'agent_verifier' 
+(C:\Trivim Internship\engi
+neering_comparison_system\
+agent_verifier.py)
+INFO:comparator:Compare 
+done ΓÇö MODERATE CHANGES 
+ 80%  Add:0 Rem:0 
+Resize:0 Chg:0 Mov:0 
+Dim:35  
+Align:SIFT/ORB/Phase
+INFO:report_generator:Repo
+rtGenerator v2.0 
+initialized
+INFO:report_generator:3-pa
+nel report saved: 
+C:\Trivim Internship\engin
+eering_comparison_system\r
+eports\PRV73B124139\HF_AUD
+IT_1775645552\visual_repor
+t.jpg
+INFO:report_generator:Ente
+rprise PDF report saved: 
+C:\Trivim Internship\engin
+eering_comparison_system\r
+eports\PRV73B124139\HF_AUD
+IT_1775645552\comparison_r
+eport.pdf
+INFO:ingestion:Profile 
+cache HIT: 
+PRV73B124140.PDF
+INFO:ingestion:Profile 
+cache HIT: PRV73B124140 - 
+Copy.PDF
+INFO:exclusion:Gear data 
+table masked: (142, '97', 
+4851, '3412')
+INFO:exclusion:Hough 
+circles: 72 balloons
+INFO:exclusion:Contour 
+balloons: 0
+INFO:exclusion:Dimension 
+lines masked: 1186
+INFO:exclusion:Exclusion 
+mask covers 97.1% of image
+INFO:exclusion:Gear data 
+table masked: (142, '97', 
+4851, '3412')
+INFO:exclusion:Hough 
+circles: 58 balloons
+INFO:exclusion:Contour 
+balloons: 0
+INFO:exclusion:Dimension 
+lines masked: 1062
+INFO:exclusion:Exclusion 
+mask covers 97.1% of image
+INFO:comparator:Global 
+shift rejected (magnitude 
+0.0 > limit 288.0)
+WARNING:comparator:Failed 
+to run agent verifier: 
+cannot import name 
+'verify_changes' from 
+'agent_verifier' 
+(C:\Trivim Internship\engi
+neering_comparison_system\
+agent_verifier.py)
+INFO:comparator:Compare 
+done ΓÇö MODERATE CHANGES 
+ 80%  Add:0 Rem:0 
+Resize:0 Chg:0 Mov:0 
+Dim:56  
+Align:SIFT/ORB/Phase
+INFO:report_generator:Repo
+rtGenerator v2.0 
+initialized
+INFO:report_generator:3-pa
+nel report saved: 
+C:\Trivim Internship\engin
+eering_comparison_system\r
+eports\PRV73B124140\HF_AUD
+IT_1775645558\visual_repor
+t.jpg
+INFO:report_generator:Ente
+rprise PDF report saved: 
+C:\Trivim Internship\engin
+eering_comparison_system\r
+eports\PRV73B124140\HF_AUD
+IT_1775645558\comparison_r
+eport.pdf
+INFO:ingestion:Profile 
+cache HIT: 
+PRV73B124141.PDF
+INFO:ingestion:Profile 
+cache HIT: PRV73B124141 - 
+Copy.PDF
+INFO:exclusion:Gear data 
+table masked: (216, 101, 
+6920, 4837)
+INFO:exclusion:Revision 
+table masked: (626, 860, 
+3061, 1925)
+INFO:exclusion:Hough 
+circles: 731 balloons
+INFO:exclusion:Contour 
+balloons: 0
+INFO:exclusion:Dimension 
+lines masked: 461
+INFO:exclusion:Exclusion 
+mask covers 93.7% of image
+INFO:exclusion:Gear data 
+table masked: (216, 101, 
+6920, 4837)
+INFO:exclusion:Revision 
+table masked: (626, 860, 
+3061, 1925)
+INFO:exclusion:Hough 
+circles: 716 balloons
+INFO:exclusion:Contour 
+balloons: 0
+INFO:exclusion:Dimension 
+lines masked: 476
+INFO:exclusion:Exclusion 
+mask covers 93.7% of image
+INFO:comparator:Global 
+shift rejected (magnitude 
+0.0 > limit 288.0)
+WARNING:comparator:Failed 
+to run agent verifier: 
+cannot import name 
+'verify_changes' from 
+'agent_verifier' 
+(C:\Trivim Internship\engi
+neering_comparison_system\
+agent_verifier.py)
+INFO:comparator:Compare 
+done ΓÇö MODERATE CHANGES 
+ 80%  Add:0 Rem:0 
+Resize:0 Chg:0 Mov:0 
+Dim:22  
+Align:SIFT/ORB/Phase
+INFO:report_generator:Repo
+rtGenerator v2.0 
+initialized
+INFO:report_generator:3-pa
+nel report saved: 
+C:\Trivim Internship\engin
+eering_comparison_system\r
+eports\PRV73B124141\HF_AUD
+IT_1775645564\visual_repor
+t.jpg
+INFO:report_generator:Ente
+rprise PDF report saved: 
+C:\Trivim Internship\engin
+eering_comparison_system\r
+eports\PRV73B124141\HF_AUD
+IT_1775645564\comparison_r
+eport.pdf
+INFO:ingestion:Profile 
+cache HIT: 
+PRV73B124142.PDF
+INFO:ingestion:Profile 
+cache HIT: PRV73B124142 - 
+Copy.PDF
+INFO:exclusion:Gear data 
+table masked: (142, '97', 
+4851, '3412')
+INFO:exclusion:Hough 
+circles: 64 balloons
+INFO:exclusion:Contour 
+balloons: 0
+INFO:exclusion:Dimension 
+lines masked: 1145
+INFO:exclusion:Exclusion 
+mask covers 97.2% of image
+INFO:exclusion:Gear data 
+table masked: (142, '97', 
+4851, '3412')
+INFO:exclusion:Hough 
+circles: 73 balloons
+INFO:exclusion:Contour 
+balloons: 0
+INFO:exclusion:Dimension 
+lines masked: 1184
+INFO:exclusion:Exclusion 
+mask covers 97.2% of image
+INFO:comparator:Global 
+shift rejected (magnitude 
+0.0 > limit 288.0)
+WARNING:comparator:Failed 
+to run agent verifier: 
+cannot import name 
+'verify_changes' from 
+'agent_verifier' 
+(C:\Trivim Internship\engi
+neering_comparison_system\
+agent_verifier.py)
+INFO:comparator:Compare 
+done ΓÇö MODERATE CHANGES 
+ 80%  Add:0 Rem:0 
+Resize:0 Chg:0 Mov:0 
+Dim:58  
+Align:SIFT/ORB/Phase
+INFO:report_generator:Repo
+rtGenerator v2.0 
+initialized
+INFO:report_generator:3-pa
+nel report saved: 
+C:\Trivim Internship\engin
+eering_comparison_system\r
+eports\PRV73B124142\HF_AUD
+IT_1775645570\visual_repor
+t.jpg
+INFO:report_generator:Ente
+rprise PDF report saved: 
+C:\Trivim Internship\engin
+eering_comparison_system\r
+eports\PRV73B124142\HF_AUD
+IT_1775645570\comparison_r
+eport.pdf
+Engineering Drawing Comparison System v2.1.0
+Company  : Wipro Pari Private Limited
+Folders  : Ready Γ£à
+=== STARTING HIGH-FIDELITY AUDIT (FIRST 5 PAIRS) ===
+Targeting 5 pairs for audit.
+
+
+Processing PRV73B124138.PDF vs PRV73B124138 - Copy.PDF...
+  Done. PDF: C:\Trivim Internship\engineering_comparison_system\reports\PRV73B124138\HF_AUDIT_1775645545\comparison_report.pdf
+
+Processing PRV73B124139.PDF vs PRV73B124139 - Copy.PDF...
+  Done. PDF: C:\Trivim Internship\engineering_comparison_system\reports\PRV73B124139\HF_AUDIT_1775645552\comparison_report.pdf
+
+Processing PRV73B124140.PDF vs PRV73B124140 - Copy.PDF...
+  Done. PDF: C:\Trivim Internship\engineering_comparison_system\reports\PRV73B124140\HF_AUDIT_1775645558\comparison_report.pdf
+
+Processing PRV73B124141.PDF vs PRV73B124141 - Copy.PDF...
+  Done. PDF: C:\Trivim Internship\engineering_comparison_system\reports\PRV73B124141\HF_AUDIT_1775645564\comparison_report.pdf
+
+Processing PRV73B124142.PDF vs PRV73B124142 - Copy.PDF...
+  Done. PDF: C:\Trivim Internship\engineering_comparison_system\reports\PRV73B124142\HF_AUDIT_1775645570\comparison_report.pdf
+
+
+=====================================================================================
+Pair                 | Changes Found  | SSIM     | YOLO Fallback  | Time (s)
+-------------------------------------------------------------------------------------
+PRV73B124138         | 9              | 0.9079   | YES            | 13.56s
+PRV73B124139         | 12             | 0.9928   | YES            | 6.85s
+PRV73B124140         | 11             | 0.9925   | YES            | 4.90s
+PRV73B124141         | 8              | 0.9967   | YES            | 5.54s
+PRV73B124142         | 8              | 0.9939   | YES            | 5.20s
+=====================================================================================
+
+Audit Complete. Summary recorded in reports\audit_summary.md

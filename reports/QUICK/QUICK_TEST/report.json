@@ -1,0 +1,205 @@
+{
+  "system": "Engineering Drawing Comparison System",
+  "system_version": "1.0.0",
+  "comparison_id": "QUICK_TEST",
+  "generated_at": "2026-04-03T16:12:24.538146",
+  "processing_time_sec": 0.91,
+  "drawing": {
+    "drawing_id": "QUICK",
+    "version_1": "v1",
+    "version_2": "v2"
+  },
+  "summary": {
+    "similarity": 91.65,
+    "difference": 8.35,
+    "verdict": "MODERATELY DIFFERENT",
+    "added_count": 2,
+    "removed_count": 4,
+    "modified_count": 0,
+    "matched_count": 1,
+    "total_balloons": 6
+  },
+  "changes": {
+    "added": [
+      {
+        "object_id": 12,
+        "area": 81.5,
+        "centroid": [
+          18,
+          1100
+        ],
+        "bbox": [
+          17,
+          1082,
+          5,
+          40
+        ],
+        "shape_type": "complex",
+        "perimeter": 88.04
+      },
+      {
+        "object_id": 21,
+        "area": 74.0,
+        "centroid": [
+          1585,
+          954
+        ],
+        "bbox": [
+          1582,
+          949,
+          9,
+          12
+        ],
+        "shape_type": "circle",
+        "perimeter": 34.49
+      }
+    ],
+    "removed": [
+      {
+        "object_id": 2,
+        "area": 59.0,
+        "centroid": [
+          1286,
+          1186
+        ],
+        "bbox": [
+          1283,
+          1181,
+          8,
+          12
+        ],
+        "shape_type": "circle",
+        "perimeter": 30.14
+      },
+      {
+        "object_id": 7,
+        "area": 53.5,
+        "centroid": [
+          1149,
+          1184
+        ],
+        "bbox": [
+          1147,
+          1180,
+          7,
+          11
+        ],
+        "shape_type": "rectangle",
+        "perimeter": 29.9
+      },
+      {
+        "object_id": 8,
+        "area": 56.0,
+        "centroid": [
+          1013,
+          1185
+        ],
+        "bbox": [
+          1010,
+          1180,
+          7,
+          12
+        ],
+        "shape_type": "circle",
+        "perimeter": 29.31
+      },
+      {
+        "object_id": 22,
+        "area": 69.5,
+        "centroid": [
+          18,
+          1100
+        ],
+        "bbox": [
+          17,
+          1082,
+          4,
+          38
+        ],
+        "shape_type": "complex",
+        "perimeter": 84.87
+      }
+    ],
+    "modified": []
+  },
+  "balloons": [
+    {
+      "balloon_no": 1,
+      "change_type": "added",
+      "centroid_x": 18,
+      "centroid_y": 1100,
+      "bbox_x": 17,
+      "bbox_y": 1082,
+      "bbox_w": 5,
+      "bbox_h": 40,
+      "area": 81.5,
+      "shape_type": "complex",
+      "area_change": 0
+    },
+    {
+      "balloon_no": 2,
+      "change_type": "added",
+      "centroid_x": 1585,
+      "centroid_y": 954,
+      "bbox_x": 1582,
+      "bbox_y": 949,
+      "bbox_w": 9,
+      "bbox_h": 12,
+      "area": 74.0,
+      "shape_type": "circle",
+      "area_change": 0
+    },
+    {
+      "balloon_no": 3,
+      "change_type": "removed",
+      "centroid_x": 1286,
+      "centroid_y": 1186,
+      "bbox_x": 1283,
+      "bbox_y": 1181,
+      "bbox_w": 8,
+      "bbox_h": 12,
+      "area": 59.0,
+      "shape_type": "circle",
+      "area_change": 0
+    },
+    {
+      "balloon_no": 4,
+      "change_type": "removed",
+      "centroid_x": 1149,
+      "centroid_y": 1184,
+      "bbox_x": 1147,
+      "bbox_y": 1180,
+      "bbox_w": 7,
+      "bbox_h": 11,
+      "area": 53.5,
+      "shape_type": "rectangle",
+      "area_change": 0
+    },
+    {
+      "balloon_no": 5,
+      "change_type": "removed",
+      "centroid_x": 1013,
+      "centroid_y": 1185,
+      "bbox_x": 1010,
+      "bbox_y": 1180,
+      "bbox_w": 7,
+      "bbox_h": 12,
+      "area": 56.0,
+      "shape_type": "circle",
+      "area_change": 0
+    },
+    {
+      "balloon_no": 6,
+      "change_type": "removed",
+      "centroid_x": 18,
+      "centroid_y": 1100,
+      "bbox_x": 17,
+      "bbox_y": 1082,
+      "bbox_w": 4,
+      "bbox_h": 38,
+      "area": 69.5,
+      "shape_type": "complex",
+      "area_change": 0
+    }
+  ]
+}

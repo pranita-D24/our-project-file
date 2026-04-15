@@ -1,0 +1,6 @@
+batch_size: 10
+drawings_root: c:\Trivim Internship\engineering_comparison_system\test_data
+max_workers: 4
+output_root: c:\Trivim Internship\engineering_comparison_system\test_data\output
+v1_suffix: _V1.pdf
+v2_suffix: _V2.pdf

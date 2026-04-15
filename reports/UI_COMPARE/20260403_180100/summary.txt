@@ -1,0 +1,21 @@
+============================================================
+  Engineering Drawing Comparison System
+  Comparison Report
+============================================================
+  Drawing ID   : UI_COMPARE
+  Version 1    : v1
+  Version 2    : v2
+  Generated    : 2026-04-03 18:01:02
+
+  RESULTS
+------------------------------------------------------------
+  Similarity   : 97.69%
+  Verdict      : VERY SIMILAR
+
+  CHANGES DETECTED
+------------------------------------------------------------
+  Added        : 0 objects
+  Removed      : 0 objects
+  Modified     : 1 objects
+  Unchanged    : 4 objects (moved objects ignored)
+============================================================

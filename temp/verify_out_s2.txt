@@ -1,0 +1,44 @@
+﻿.\venv\Scripts\python.exe 
+: Tesseract failed: 
+tesseract is not 
+installed or it's not in 
+your PATH. See README 
+file for more information.
+At line:1 char:1
++ 
+.\venv\Scripts\python.exe 
+temp\verify_stage2.py 
+2>&1 | Out-File -File ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~
+    + CategoryInfo        
+      : NotSpecified: (T  
+  esseract faile...re i   
+ nformation.:String) [    
+], RemoteException
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+--- Testing Normalization ---
+INPUT: ΓîÇ50 ┬▒0.1   | RESULT: 50.0, 0.1, dimension  | PASS: True
+INPUT: 45┬░        | RESULT: 45.0, None, angle      | PASS: True
+INPUT: R10        | RESULT: 10.0, None, radius     | PASS: True
+INPUT: 100,5      | RESULT: 100.5, None, dimension  | PASS: True
+INPUT: ┬▒0.05      | RESULT: None, 0.05, dimension  | PASS: True
+INPUT: .25        | RESULT: 0.25, None, dimension  | PASS: True
+INPUT: M10x1.5    | RESULT: 10.0, None, thread     | PASS: True
+INPUT: 2X ΓîÇ15     | RESULT: 15.0, None, dimension  | PASS: True
+
+--- Testing Hungarian Matching ---
+DIM_CHANGES: 1 (Expected: 1)
+ADDED:       2 (Expected: 1)
+REMOVED:     1 (Expected: 0)
+IDENTICAL:   0 (Expected: 1)
+PASS: False
+
+--- Testing Pipeline Stub ---
+Annotations found: 1
+First result: dimension at (100, 200) val=None
+PASS: True

@@ -1,0 +1,63 @@
+{
+  "system": "Engineering Drawing Comparison System",
+  "system_version": "1.0.0",
+  "comparison_id": "20260403_173218",
+  "generated_at": "2026-04-03T17:32:19.276360",
+  "processing_time_sec": null,
+  "drawing": {
+    "drawing_id": "UI_COMPARE",
+    "version_1": "v1",
+    "version_2": "v2"
+  },
+  "summary": {
+    "similarity": 95.72,
+    "difference": 4.28,
+    "verdict": "VERY SIMILAR",
+    "added_count": 0,
+    "removed_count": 0,
+    "modified_count": 1,
+    "matched_count": 2
+  },
+  "changes": {
+    "added": [],
+    "removed": [],
+    "modified": [
+      {
+        "v1": {
+          "object_id": 7,
+          "area": 133933.5,
+          "centroid": [
+            1100,
+            760
+          ],
+          "bbox": [
+            933,
+            560,
+            335,
+            402
+          ],
+          "shape_type": "rectangle",
+          "perimeter": 1469.41
+        },
+        "v2": {
+          "object_id": 12,
+          "area": 133933.5,
+          "centroid": [
+            1100,
+            306
+          ],
+          "bbox": [
+            933,
+            106,
+            335,
+            402
+          ],
+          "shape_type": "rectangle",
+          "perimeter": 1469.41
+        },
+        "area_change_pct": 0.0,
+        "similarity": 0.863
+      }
+    ]
+  }
+}

@@ -1,0 +1,322 @@
+﻿.\venv\Scripts\python.exe 
+: Bulk save failed: 
+(sqlite3.IntegrityError) 
+UNIQUE constraint failed: 
+drawing_elements.id
+At line:1 char:1
++ 
+.\venv\Scripts\python.exe 
+temp\verify_stage3_4.py 
+2>&1 | Out-File -Fi ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~
+    + CategoryInfo        
+      : NotSpecified: (B  
+  ulk save faile...ing_   
+ elements.id:String) [    
+], RemoteException
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+[SQL: INSERT INTO 
+drawing_elements (id, 
+drawing_id, type, bbox_x, 
+bbox_y, bbox_w, bbox_h, 
+centroid_x, centroid_y, 
+value, metadata_json) 
+VALUES (?, ?, ?, ?, ?, ?, 
+?, ?, ?, ?, ?)]
+[parameters: ('E1', 
+'DWG1', 'component', 100, 
+100, 20, 20, 110.0, 
+110.0, 10.0, '{}')]
+(Background on this error 
+at: https://sqlalche.me/e/
+20/gkpj)
+--- Testing Spatial DB ---
+Traceback (most recent 
+call last):
+  File "C:\Trivim Internsh
+ip\engineering_comparison_
+system\venv\Lib\site-packa
+ges\sqlalchemy\engine\base
+.py", line 1967, in 
+_exec_single_context
+    
+self.dialect.do_execute(
+    
+~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, 
+str_statement, 
+effective_parameters, 
+context
+        ^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^
+    )
+    ^
+  File "C:\Trivim Internsh
+ip\engineering_comparison_
+system\venv\Lib\site-packa
+ges\sqlalchemy\engine\defa
+ult.py", line 952, in 
+do_execute
+    
+cursor.execute(statement, 
+parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^
+^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: 
+UNIQUE constraint failed: 
+drawing_elements.id
+
+The above exception was 
+the direct cause of the 
+following exception:
+
+Traceback (most recent 
+call last):
+  File "C:\Trivim Internsh
+ip\engineering_comparison_
+system\temp\verify_stage3_
+4.py", line 81, in 
+<module>
+    test_spatial_db()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Trivim Internsh
+ip\engineering_comparison_
+system\temp\verify_stage3_
+4.py", line 20, in 
+test_spatial_db
+    db.bulk_save_elements(
+elements)
+    ~~~~~~~~~~~~~~~~~~~~~^
+^^^^^^^^^
+  File "C:\Trivim Internsh
+ip\engineering_comparison_
+system\database_spatial.py
+", line 121, in 
+bulk_save_elements
+    session.bulk_save_obje
+cts(db_objs)
+    ~~~~~~~~~~~~~~~~~~~~~~
+~~~^^^^^^^^^
+  File "C:\Trivim Internsh
+ip\engineering_comparison_
+system\venv\Lib\site-packa
+ges\sqlalchemy\orm\session
+.py", line 4564, in 
+bulk_save_objects
+    
+self._bulk_save_mappings(
+    
+~~~~~~~~~~~~~~~~~~~~~~~~^
+        mapper,
+        ^^^^^^^
+    ...<5 lines>...
+        
+render_nulls=False,
+        
+^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Trivim Internsh
+ip\engineering_comparison_
+system\venv\Lib\site-packa
+ges\sqlalchemy\orm\session
+.py", line 4741, in 
+_bulk_save_mappings
+    with 
+util.safe_reraise():
+         
+~~~~~~~~~~~~~~~~~^^
+  File "C:\Trivim Internsh
+ip\engineering_comparison_
+system\venv\Lib\site-packa
+ges\sqlalchemy\util\langhe
+lpers.py", line 121, in 
+__exit__
+    raise exc_value.with_t
+raceback(exc_tb)
+  File "C:\Trivim Internsh
+ip\engineering_comparison_
+system\venv\Lib\site-packa
+ges\sqlalchemy\orm\session
+.py", line 4730, in 
+_bulk_save_mappings
+    bulk_persistence._bulk
+_insert(
+    ~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~^
+        mapper,
+        ^^^^^^^
+    ...<4 lines>...
+        
+render_nulls=render_nulls,
+        
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Trivim Internsh
+ip\engineering_comparison_
+system\venv\Lib\site-packa
+ges\sqlalchemy\orm\bulk_pe
+rsistence.py", line 222, 
+in _bulk_insert
+    result = persistence._
+emit_insert_statements(
+        base_mapper,
+    ...<6 lines>...
+        execution_options=
+execution_options,
+    )
+  File "C:\Trivim Internsh
+ip\engineering_comparison_
+system\venv\Lib\site-packa
+ges\sqlalchemy\orm\persist
+ence.py", line 1048, in 
+_emit_insert_statements
+    result = 
+connection.execute(
+        statement, 
+multiparams, execution_opt
+ions=execution_options
+    )
+  File "C:\Trivim Internsh
+ip\engineering_comparison_
+system\venv\Lib\site-packa
+ges\sqlalchemy\engine\base
+.py", line 1419, in 
+execute
+    return meth(
+        self,
+        
+distilled_parameters,
+        execution_options 
+or NO_OPTIONS,
+    )
+  File "C:\Trivim Internsh
+ip\engineering_comparison_
+system\venv\Lib\site-packa
+ges\sqlalchemy\sql\element
+s.py", line 527, in 
+_execute_on_connection
+    return connection._exe
+cute_clauseelement(
+           ~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~^
+        self, 
+distilled_params, 
+execution_options
+        ^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Trivim Internsh
+ip\engineering_comparison_
+system\venv\Lib\site-packa
+ges\sqlalchemy\engine\base
+.py", line 1641, in 
+_execute_clauseelement
+    ret = 
+self._execute_context(
+        dialect,
+    ...<8 lines>...
+        
+cache_hit=cache_hit,
+    )
+  File "C:\Trivim Internsh
+ip\engineering_comparison_
+system\venv\Lib\site-packa
+ges\sqlalchemy\engine\base
+.py", line 1846, in 
+_execute_context
+    return 
+self._exec_single_context(
+           
+~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, 
+statement, parameters
+        ^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Trivim Internsh
+ip\engineering_comparison_
+system\venv\Lib\site-packa
+ges\sqlalchemy\engine\base
+.py", line 1986, in 
+_exec_single_context
+    self._handle_dbapi_exc
+eption(
+    ~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~^
+        e, str_statement, 
+effective_parameters, 
+cursor, context
+        ^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^
+    )
+    ^
+  File "C:\Trivim Internsh
+ip\engineering_comparison_
+system\venv\Lib\site-packa
+ges\sqlalchemy\engine\base
+.py", line 2363, in 
+_handle_dbapi_exception
+    raise sqlalchemy_excep
+tion.with_traceback(exc_in
+fo[2]) from e
+  File "C:\Trivim Internsh
+ip\engineering_comparison_
+system\venv\Lib\site-packa
+ges\sqlalchemy\engine\base
+.py", line 1967, in 
+_exec_single_context
+    
+self.dialect.do_execute(
+    
+~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, 
+str_statement, 
+effective_parameters, 
+context
+        ^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^
+    )
+    ^
+  File "C:\Trivim Internsh
+ip\engineering_comparison_
+system\venv\Lib\site-packa
+ges\sqlalchemy\engine\defa
+ult.py", line 952, in 
+do_execute
+    
+cursor.execute(statement, 
+parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^
+^^^^^^^^^^^^^^^
+sqlalchemy.exc.IntegrityEr
+ror: 
+(sqlite3.IntegrityError) 
+UNIQUE constraint failed: 
+drawing_elements.id
+[SQL: INSERT INTO 
+drawing_elements (id, 
+drawing_id, type, bbox_x, 
+bbox_y, bbox_w, bbox_h, 
+centroid_x, centroid_y, 
+value, metadata_json) 
+VALUES (?, ?, ?, ?, ?, ?, 
+?, ?, ?, ?, ?)]
+[parameters: ('E1', 
+'DWG1', 'component', 100, 
+100, 20, 20, 110.0, 
+110.0, 10.0, '{}')]
+(Background on this error 
+at: https://sqlalche.me/e/
+20/gkpj)

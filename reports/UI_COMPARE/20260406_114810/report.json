@@ -1,0 +1,44 @@
+{
+  "system": "Engineering Drawing Comparison System",
+  "company": "Wipro Pari Private Limited",
+  "version": "2.0.0",
+  "comparison_id": "20260406_114810",
+  "generated_at": "2026-04-06T11:48:11.745000",
+  "processing_time": 15.92,
+  "drawing": {
+    "drawing_id": "UI_COMPARE",
+    "version_1": "v1",
+    "version_2": "v2"
+  },
+  "cv_analysis": {
+    "similarity": 97.59,
+    "ssim_similarity": 97.59,
+    "changed_pixel_pct": 0.62,
+    "difference": 2.41,
+    "verdict": "VERY SIMILAR",
+    "added_count": 0,
+    "removed_count": 0,
+    "modified_count": 0,
+    "matched_count": 0,
+    "auto_summary": "Verdict: VERY SIMILAR\nPixel difference: 0.62% of drawing area changed\nSSIM score: 97.59%\n\n\u2705 No structural changes detected.\n   Minor pixel differences may be due to rendering or compression."
+  },
+  "ai_analysis": {
+    "available": false,
+    "similarity": null,
+    "verdict": null,
+    "changes_found": 0,
+    "insights": [],
+    "notes": ""
+  },
+  "dimension_analysis": {
+    "summary": "126 dimension lines changed",
+    "lines_changed": 126,
+    "values_changed": 0,
+    "auto_reading": []
+  },
+  "object_changes": {
+    "added": [],
+    "removed": [],
+    "modified": []
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "drawing_number": "",
+  "revision": "",
+  "drawing_standard": "UNKNOWN",
+  "units": "mm",
+  "scale": "1:1",
+  "scale_ratio": 1.0,
+  "title_block_bbox": [
+    992,
+    2737,
+    2480,
+    3509
+  ],
+  "border_bbox": [
+    55,
+    911,
+    2438,
+    2599
+  ],
+  "content_bbox": [
+    55,
+    911,
+    2438,
+    2599
+  ],
+  "gear_data_bbox": [
+    61,
+    915,
+    2436,
+    2595
+  ],
+  "revision_table_bbox": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "has_gear_data_table": true,
+  "has_section_views": false,
+  "has_detail_views": false,
+  "has_revision_table": false,
+  "estimated_complexity": "moderate",
+  "min_component_area": 500,
+  "max_component_area": 1000000,
+  "dim_line_min_length": 30,
+  "balloon_radius_min": 24,
+  "balloon_radius_max": 87,
+  "move_threshold_px": 15.0,
+  "ssim_threshold": 0.999,
+  "image_width": 2480,
+  "image_height": 3509,
+  "_isometric_bboxes": [],
+  "_notes_zones": []
+}

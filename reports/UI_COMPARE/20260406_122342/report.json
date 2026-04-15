@@ -1,0 +1,75 @@
+{
+  "system": "Engineering Drawing Comparison System",
+  "company": "Wipro Pari Private Limited",
+  "version": "2.0.0",
+  "comparison_id": "20260406_122342",
+  "generated_at": "2026-04-06T12:23:44.022683",
+  "processing_time": 8.29,
+  "drawing": {
+    "drawing_id": "UI_COMPARE",
+    "version_1": "v1",
+    "version_2": "v2"
+  },
+  "cv_analysis": {
+    "similarity": 88.0,
+    "ssim_similarity": 95.13,
+    "changed_pixel_pct": 2.35,
+    "difference": 12.0,
+    "verdict": "MODERATELY DIFFERENT",
+    "added_count": 2,
+    "removed_count": 0,
+    "modified_count": 0,
+    "matched_count": 2,
+    "auto_summary": "Verdict: MODERATELY DIFFERENT\nPixel difference: 2.35% of drawing area changed\nSSIM score: 95.13%\n\n\ud83d\udfe2 ADDED (2 objects):\n   \u2022 New triangle at position (1416,296) \u2014 area 561px\u00b2\n   \u2022 New triangle at position (1120,294) \u2014 area 650px\u00b2\n\n\u26aa UNCHANGED: 2 objects matched (moved objects ignored)"
+  },
+  "ai_analysis": {
+    "available": false,
+    "similarity": null,
+    "verdict": null,
+    "changes_found": 0,
+    "insights": [],
+    "notes": ""
+  },
+  "dimension_analysis": {
+    "summary": "45 dimension lines changed",
+    "lines_changed": 45,
+    "values_changed": 0,
+    "auto_reading": []
+  },
+  "object_changes": {
+    "added": [
+      {
+        "object_id": 2,
+        "area": 561.0,
+        "centroid": [
+          1431,
+          319
+        ],
+        "bbox": [
+          1416,
+          296,
+          24,
+          48
+        ],
+        "shape_type": "triangle"
+      },
+      {
+        "object_id": 3,
+        "area": 650.0,
+        "centroid": [
+          1128,
+          319
+        ],
+        "bbox": [
+          1120,
+          294,
+          26,
+          52
+        ],
+        "shape_type": "triangle"
+      }
+    ],
+    "removed": [],
+    "modified": []
+  }
+}

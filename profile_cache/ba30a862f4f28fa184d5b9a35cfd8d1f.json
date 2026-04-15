@@ -1,0 +1,54 @@
+{
+  "drawing_number": ".",
+  "revision": "DATE",
+  "drawing_standard": "DIN",
+  "units": "inch",
+  "scale": "1:1",
+  "scale_ratio": 1.0,
+  "title_block_bbox": [
+    2806,
+    3871,
+    7017,
+    4963
+  ],
+  "border_bbox": [
+    121,
+    7,
+    7011,
+    4841
+  ],
+  "content_bbox": [
+    150,
+    30,
+    6986,
+    4837
+  ],
+  "gear_data_bbox": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "revision_table_bbox": [
+    216,
+    101,
+    6920,
+    4837
+  ],
+  "has_gear_data_table": false,
+  "has_section_views": true,
+  "has_detail_views": true,
+  "has_revision_table": true,
+  "estimated_complexity": "moderate",
+  "min_component_area": 500,
+  "max_component_area": 1000000,
+  "dim_line_min_length": 30,
+  "balloon_radius_min": 7,
+  "balloon_radius_max": 20,
+  "move_threshold_px": 15.0,
+  "ssim_threshold": 0.999,
+  "image_width": 7017,
+  "image_height": 4963,
+  "_isometric_bboxes": [],
+  "_notes_zones": []
+}
