@@ -372,10 +372,15 @@ if "result" in st.session_state:
         if not ai_data or not ai_data.get("success"):
             st.markdown("""
             <div class="ib">
-            <b>AI analysis not active.</b><br>
-            Enter your Anthropic API key in the sidebar
-            to enable Claude Vision semantic analysis.
+            <b>Mechanical Story (Agentic Reasoning)</b><br>
+            The AI Agent has analyzed the changes and reconstructed the engineering intent.
             </div>""", unsafe_allow_html=True)
+            
+            if hasattr(res, 'mechanical_story') and res.mechanical_story:
+                with st.chat_message("assistant", avatar="⚙"):
+                    st.markdown(res.mechanical_story)
+            else:
+                st.info("No mechanical story generated for this drawing.")
         else:
             changes = ai_data.get("changes", [])
             ac1, ac2 = st.columns([2,1])

@@ -12,8 +12,8 @@ from typing import List, Optional, Tuple, Any, Dict
 from stage4_geometry import Stage4Engine
 from stage2_vector import Stage2Engine
 from stage3_balloons import detect_balloons
-import stage5_moves
 from report_generator import ReportGenerator
+from reasoning_engine import ReasoningEngine
 import yaml
 import cv2
 import numpy as np
@@ -43,6 +43,7 @@ class CompareResult:
     similarity: float = 100.0
     overall_ssim: float = 1.0
     pixel_diff_pct: float = 0.0
+    mechanical_story: str = ""
     
 def classify_pdf(page: fitz.Page) -> str:
     """Mandatory Type Gate: Distinguishes Vector from Scanned Raster PDFs."""
@@ -501,7 +502,11 @@ def compare(path1: str, path2: str, sensitivity: float = 0.55, drawing_id: str =
             except Exception as ethumb:
                 logger.warning(f"Failed to generate thumbnail for {drawing_id}: {ethumb}")
 
-        # Bridge fix (User Request Fix 2: One-line mapping)
+        # --- STEP 9: REASONING ENGINE (Human Intelligence) ---
+        all_changes = clustered_added + clustered_removed + s4_res["geometry"]["resized"]
+        engine = ReasoningEngine()
+        audit_res = engine.run_full_audit(all_changes)
+        res.mechanical_story = audit_res.get("mechanical_story", "")
 
         res.processing_time = time.time() - start_time
         
